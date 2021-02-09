@@ -23,7 +23,7 @@ public class Exerc5 {
             System.out.println("Nao foi possivel calcular o fatorial");
             System.exit(-1);
         }
-        teclado.close()
+        teclado.close();
     }
 }
 
