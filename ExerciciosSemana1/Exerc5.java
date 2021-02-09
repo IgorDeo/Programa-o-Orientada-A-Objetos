@@ -15,7 +15,7 @@ public class Exerc5 {
     public static void main(String[] args){
         int n;
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Digite o N para encontrar seu fatorial\n");
+        System.out.println("Digite o N para encontrar seu fatorial");
         n = teclado.nextInt();
 
         if(n >= 0){

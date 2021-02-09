@@ -1,7 +1,5 @@
 package ExerciciosSemana1;
 
-import java.util.Scanner;
-
 class Exerc3 {
     public static void main(String[] args){
         int soma = 0;

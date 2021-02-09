@@ -1,5 +1,6 @@
 package ExerciciosSemana1;
 
+
 // Escreva um programa que recebe como parâmetro um número inteiro n. A função deve ler n valores do teclado e retornar quantos destes valores são negativos.
 import java.util.Scanner;
 
