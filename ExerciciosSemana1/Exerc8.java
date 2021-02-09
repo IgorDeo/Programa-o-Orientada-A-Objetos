@@ -32,7 +32,7 @@ public class Exerc8 {
         }
 
         if (soma_dig_principal != soma_dig_secundaria){
-            System.out.print("Nao eh um quadrado magico");
+            System.out.print("Nao eh um quadrado mágico");
             System.exit(0);
         }
 
