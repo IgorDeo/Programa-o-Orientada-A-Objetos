@@ -1,3 +1,5 @@
+package ExerciciosSemana1;
+
 // Escreva um programa recebe um valor N inteiro e que, se N for positivo, retorna o fatorial de N (N!). Se não for possível calcular o fatorial, a função deve imprimir uma mensagem e retornar o valor -1.
 
 import java.util.Scanner;
