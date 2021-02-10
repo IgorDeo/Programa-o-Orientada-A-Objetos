@@ -7,8 +7,10 @@ public class Exerc7 {
     public static void main(String[] args) {
         float inserido, total = 0;
         float pessimas = 0, ruins = 0, boas = 0, otimas = 0;
-        float perc_pessimas, perc_ruins, perc_boas, perc_otimas;
+        float percPessimas, percRuins, percBoas, percOtimas;
         Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Insira a nota dada pelos funcionarios(digite um numero maior do que 100 para encerrar a insercao de dados)");
         
         while (true){
             inserido = teclado.nextInt();
@@ -29,15 +31,15 @@ public class Exerc7 {
             }
             total++;
         }
-        perc_pessimas = (pessimas/total)*100;
-        perc_ruins = (ruins/total)*100;
-        perc_boas = (boas/total)*100;
-        perc_otimas = (otimas/total)*100;
+        percPessimas = (pessimas/total)*100;
+        percRuins = (ruins/total)*100;
+        percBoas = (boas/total)*100;
+        percOtimas = (otimas/total)*100;
 
-        System.out.printf("A porcentagem de funcionarios que consideram o restaurante pessimo é: %.2f\n", perc_pessimas);
-        System.out.printf("A porcentagem de funcionarios que consideram o restaurante ruim é: %.2f\n", perc_ruins);
-        System.out.printf("A porcentagem de funcionarios que consideram o restaurante bom é: %.2f\n", perc_boas);
-        System.out.printf("A porcentagem de funcionarios que consideram o restaurante otimo é: %.2f\n", perc_otimas);
+        System.out.printf("A porcentagem de funcionarios que consideram o restaurante pessimo é: %.2f\n", percPessimas);
+        System.out.printf("A porcentagem de funcionarios que consideram o restaurante ruim é: %.2f\n", percRuins);
+        System.out.printf("A porcentagem de funcionarios que consideram o restaurante bom é: %.2f\n", percBoas);
+        System.out.printf("A porcentagem de funcionarios que consideram o restaurante otimo é: %.2f\n", percOtimas);
 
         teclado.close();
     }

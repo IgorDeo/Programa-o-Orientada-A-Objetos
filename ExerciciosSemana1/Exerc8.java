@@ -14,10 +14,13 @@ import java.util.Scanner;
 public class Exerc8 { 
     public static void main(String[] args){
         int n;
-        int soma_dig_principal = 0, soma_dig_secundaria = 0;
+        int somaDigPrincipal = 0, somaDigSecundaria = 0;
         Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Insira o tamanho da matriz");
         n = teclado.nextInt();
-        int matriz[][] = new int[n][n];
+        
+        int[][] matriz = new int[n][n];
 
         for (int i = 0; i < n;i++){    //ler matriz
             for (int j = 0; j < n; j++){
@@ -27,35 +30,35 @@ public class Exerc8 {
         }
 
         for (int i = 0; i < n;i++){    //pegar a soma da diagonal principal
-                soma_dig_principal += matriz[i][i];
+                somaDigPrincipal += matriz[i][i];
         }
 
         for(int i = 0; i < n; i++){    //pegar soma da diagonal secundária
-            soma_dig_secundaria += matriz[i][n - 1 - i];
+            somaDigSecundaria += matriz[i][n - 1 - i];
         }
 
-        if (soma_dig_principal != soma_dig_secundaria){
+        if (somaDigPrincipal != somaDigSecundaria){
             System.out.print("Nao eh um quadrado mágico");
             System.exit(0);
         }
 
         for (int i = 0; i < n; i++){    //Pegar soma das linhas e verificar
-            int soma_linha = 0;
+            int somaLinha = 0;
             for (int j = 0; j < n; j++){
-                soma_linha += matriz[i][j];
+                somaLinha += matriz[i][j];
             }
-            if(soma_linha != soma_dig_principal){
+            if(somaLinha != somaDigPrincipal){
                 System.out.print("Nao eh um quadrado magico");
                 System.exit(0);
             }
         }
 
         for (int i = 0; i < n; i++){
-            int soma_coluna = 0;
+            int somaColuna = 0;
             for(int j = 0; j < n; j++){
-                soma_coluna += matriz[j][i];
+                somaColuna += matriz[j][i];
             }
-            if(soma_coluna != soma_dig_principal){
+            if(somaColuna != somaDigPrincipal){
                 System.out.print("Nao eh um quadrado magico");
                 System.exit(0);
             }
