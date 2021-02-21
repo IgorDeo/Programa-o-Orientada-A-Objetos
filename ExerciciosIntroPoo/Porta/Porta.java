@@ -30,12 +30,11 @@ public class Porta {
     }
     
     
-    boolean estaAberta(){
-        if (this.aberta == true){
-            return true;
-        }
-        else{
-            return false;
+    void estaAberta(){
+        if(aberta){
+            System.out.println("A porta está aberta!\n");
+        }else{
+            System.out.println("A porta está fechada!\n");
         }
     }
 
@@ -45,6 +44,12 @@ public class Porta {
     
     void fecharPorta(){
         this.aberta = false;
+    }
+
+    void informacoesPorta(){
+        System.out.printf("Cor: %s\n", cor);
+        System.out.printf("Altura: %.2f metros\n", altura);
+        System.out.printf("Largura: %.2f metros\n", largura);
     }
     
 }
