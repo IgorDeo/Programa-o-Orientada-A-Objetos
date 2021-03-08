@@ -13,20 +13,20 @@ public class Casa {
         posicaoPorta++;
     }
     
-    void setCor(String cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
-    String getCor() {
+    public String getCor() {
         return cor;
     }
 
 
-    void quantasPortasEstaoAbertas(){
+    public void quantasPortasEstaoAbertas(){
         System.out.printf("Existem %d porta(s) aberta(s) no momento.\n", abertas);
     }
 
-    void abrirUmaPorta(int numeroDaPorta){
+    public void abrirUmaPorta(int numeroDaPorta){
         if(!portas[numeroDaPorta-1].estaAberta()){
             portas[numeroDaPorta - 1].abrirPorta();
             System.out.printf("A porta de numero %d foi aberta\n", numeroDaPorta);
@@ -37,7 +37,7 @@ public class Casa {
         }
     }
     
-    void fecharUmaPorta(int numeroDaPorta){
+    public void fecharUmaPorta(int numeroDaPorta){
         if(portas[numeroDaPorta - 1].estaAberta()){
             portas[numeroDaPorta - 1].fecharPorta();
             System.out.printf("A porta de numero %d foi fechada\n", numeroDaPorta);
@@ -48,7 +48,7 @@ public class Casa {
         }
     }
 
-    void abrirTodasAsPortas(){
+    public void abrirTodasAsPortas(){
         for(int i = 0; i < portas.length; i++){
             if(!portas[i].estaAberta()){
                 portas[i].abrirPorta();
@@ -57,7 +57,7 @@ public class Casa {
         }
     }
 
-    void fecharTodasAsPortas(){
+    public void fecharTodasAsPortas(){
         for(int i = 0; i < portas.length; i++){
             if(portas[i].estaAberta()){
                 portas[i].fecharPorta();

@@ -1,20 +1,20 @@
 package ExerciciosConstrutores.Questao3.Baralho;
 
 public class Carta {
-    String naipe;
-    String valor;
+    private String naipe;
+    private String valor;
 
-    String getValor(){
+    public String getValor(){
         return valor;
     }
-    void setValor(String valor){
+    public void setValor(String valor){
         this.valor = valor;
     }
 
-    String getNaipe(){
+    public String getNaipe(){
         return naipe;
     }
-    void setNaipe(String naipe){
+    public void setNaipe(String naipe){
         this.naipe = naipe;
     }
 

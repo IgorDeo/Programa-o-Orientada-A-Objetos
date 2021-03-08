@@ -10,5 +10,11 @@ public class Main {
         celular.nivelDeCarga();
 
         celular.enviarMensagem();
+
+        celular.nivelDeCarga();
+
+        celular.recarregarBateria();
+
+        celular.nivelDeCarga();
     }
 }

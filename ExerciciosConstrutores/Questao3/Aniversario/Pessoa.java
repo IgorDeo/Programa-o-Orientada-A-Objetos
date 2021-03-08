@@ -10,27 +10,27 @@ public class Pessoa {
 
     }
     
-    int getIdade(){
+    public int getIdade(){
         return idade;
     }
 
-    String getNome(){
+    public String getNome(){
         return nome;
     }
 
-    void setNome(String nome){
+    public void setNome(String nome){
         this.nome = nome;
     }
 
-    void setIdade(int idade){
+    public void setIdade(int idade){
         this.idade = idade;
     }
 
-    void aniversario(){
+    public void aniversario(){
         idade++;
     }
 
-    void imprimirInformacoes(){
+    public void imprimirInformacoes(){
         System.out.printf("\n Nome: %s \n", nome);
         System.out.printf(" Aniversario: %d\n", idade);
     }

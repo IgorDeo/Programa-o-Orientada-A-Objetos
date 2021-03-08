@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 
 public class Pedido {
-    Produto[] itens = new Produto[100];
-    int quantidadeItens = 0;
+    private Produto[] itens = new Produto[100];
+    private int quantidadeItens = 0;
 
-    void adicionarItens(Produto produto, int quantidade){
+    public void adicionarItens(Produto produto, int quantidade){
         for (int i = 0; i < quantidade; i++){
             itens[quantidadeItens] = produto;
             quantidadeItens++;
@@ -14,7 +14,7 @@ public class Pedido {
     }
     
     
-    float getTotal(){
+    public float getTotal(){
         float total = 0;
         for(int i = 0; i < quantidadeItens; i++){
             total += itens[i].getPreco();
@@ -22,7 +22,7 @@ public class Pedido {
         return total;
     }
 
-    void pagarPedido(){
+    public void pagarPedido(){
         String metodoDePagamento;
         float dinheiroRecebido;
         

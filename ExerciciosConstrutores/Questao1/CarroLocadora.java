@@ -4,18 +4,21 @@ public class CarroLocadora {
     private String modelo;
     private String cor;
     private String placa;
-    private float aluguel;   
+    private int aluguelDias;   
+    private float aluguelPreco;
     private Boolean abastecido = true;
-    
+    private Boolean alugado = false;
 
-    CarroLocadora(String modelo, String placa, float aluguel, String cor){
-        this.modelo = modelo;
-        this.cor = cor;
-        this.placa = placa;
-        this.aluguel = aluguel;
-    }
+    
     
     public Boolean abastecer(){}
+
+    public float totalAluguel(){}
+    
+    public void alugar(){}
+    
+    public void devolver(){}
+
 
 
 

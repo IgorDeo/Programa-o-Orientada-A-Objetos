@@ -12,26 +12,26 @@ public class Porta {
         this.largura = largura;
     }
     
-    void setCor(String cor){
+    public void setCor(String cor){
         this.cor = cor;
     }
-    String getCor(){
+    public String getCor(){
         return cor;
     }
     
 
-    void setAltura(double altura){
+    public void setAltura(double altura){
         this.altura = altura;
     }
-    double getAltura(){
+    public double getAltura(){
         return altura;
     }
 
 
-    void setLargura(double largura){
+    public void setLargura(double largura){
         this.largura = largura;
     }
-    double getLargura(){
+    public double getLargura(){
         return largura;
     }
     

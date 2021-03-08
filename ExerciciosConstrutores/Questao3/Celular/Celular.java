@@ -6,12 +6,12 @@ public class Celular {
     Scanner teclado = new Scanner(System.in);
     
     void enviarMensagem(){ //consome uma unidade de carga
-        if((bateria.nivelDeCarga - 1) >= 0){
+        if((bateria.getNivelDeCarga() - 1) >= 0){
             System.out.println("Digite o numero para o qual gostaria de enviar a mensagem: ");
             teclado.nextLine();
             System.out.println("Digite a mensagem que gostaria de enviar: ");
             teclado.nextLine();
-            bateria.nivelDeCarga -= 1;
+            bateria.setNivelDeCarga(bateria.getNivelDeCarga() - 1);
         }
         else{
             System.out.println("Bateria insuficiente para enviar a mensagem");
@@ -22,10 +22,10 @@ public class Celular {
 
     void fazerLigacao(int duracao){ //consome 5 unidades de carga por segundo de ligacao
         int consumo = 5 * duracao;
-        if ((bateria.nivelDeCarga - consumo) >= 0){
+        if ((bateria.getNivelDeCarga() - consumo) >= 0){
             System.out.println("Digite o numero para o qual deseja ligar: ");
             teclado.nextLine();
-            bateria.nivelDeCarga -= consumo;
+            bateria.setNivelDeCarga(bateria.getNivelDeCarga() - consumo);
         }
         else{
             System.out.println("Bateria insuficiente para realizar a ligacao");
@@ -36,12 +36,12 @@ public class Celular {
 
  
     void recarregarBateria(){
-        bateria.nivelDeCarga = bateria.capacidade;
+        bateria.setNivelDeCarga(1000);
         System.out.println("Bateria completamente recarregada!");
     }
 
     void nivelDeCarga(){
-        System.out.printf("Bateria atual: %d \n", bateria.nivelDeCarga);
+        System.out.printf("Bateria atual: %d \n", bateria.getNivelDeCarga());
     }
 
 }

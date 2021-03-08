@@ -8,19 +8,19 @@ public class Contato {
         this.numero = numero;
     }
     
-    void setNome(String nome){
+    public void setNome(String nome){
         this.nome = nome;
     }
 
-    void setNumero(String numero){
+    public void setNumero(String numero){
         this.numero = numero;
     }
 
-    String getNome(){
+    public String getNome(){
         return nome;
     }
 
-    String getNumero(){
+    public String getNumero(){
         return numero;
     }
 

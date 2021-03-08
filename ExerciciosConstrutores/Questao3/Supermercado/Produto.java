@@ -11,23 +11,23 @@ public class Produto {
         this.estoque = estoque;
     }
 
-    void setPreco(float preco){
+    public void setPreco(float preco){
         this.preco = preco;
     }
 
-    void setEstoque(int estoque){
+    public void setEstoque(int estoque){
         this.estoque = estoque;
     }
 
-    float getPreco(){
+    public float getPreco(){
         return this.preco;
     }
 
-    int getEstoque(){
+    public int getEstoque(){
         return this.estoque;
     }
 
-    String getNome(){
+    public String getNome(){
         return this.nome;
     }
     

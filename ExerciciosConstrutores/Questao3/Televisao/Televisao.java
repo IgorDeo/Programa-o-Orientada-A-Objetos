@@ -1,48 +1,48 @@
 package ExerciciosConstrutores.Questao3.Televisao;
 
 public class Televisao {
-    boolean silenciado = false;
-    boolean ligada = false;
-    int canalAtual = 0;
-    int volume = 0;
+    private boolean silenciado = false;
+    private boolean ligada = false;
+    private int canalAtual = 0;
+    private int volume = 0;
 
-    void ligar(){
+    public void ligar(){
         this.ligada = true;
     }
 
-    void desligar(){
+    public void desligar(){
         this.ligada = false;
     }
 
-    void silenciar(){
+    public void silenciar(){
         this.silenciado = true;
     }
 
-    void dessilenciar(){
+    public void dessilenciar(){
         this.silenciado = false;
     }
 
-    void aumentarVolume(){
+    public void aumentarVolume(){
         this.volume++;
     }
 
-    void diminuirVolume(){
+    public void diminuirVolume(){
         this.volume--;
     }
 
-    void proximoCanal(){
+    public void proximoCanal(){
         canalAtual++;
     }
 
-    void anteriorCanal(){
+    public void anteriorCanal(){
         canalAtual--;
     }
 
-    void selecionarCanal(int canal){
+    public void selecionarCanal(int canal){
         canalAtual = canal;
     }
 
-    void estadoTelevisao(){
+    public void estadoTelevisao(){
         if(this.ligada){
             System.out.printf("A televisao encontra-se ligada\n");
             System.out.printf("Volume: %d\n", this.volume);

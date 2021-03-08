@@ -12,6 +12,7 @@ public class CarroOficina {
 
 
     public void terminarProcedimento(){}
+    public void avaliarCarro(){}
     
 
     
